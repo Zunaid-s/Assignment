@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticky Notes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="controls">
+        <button id="btnAdd">Add Note</button>
+        <button id="btnDelete">Delete Note</button>
+        <button id="btnEdit">Edit Note</button>
+        <button id="btnNext">Next Note</button>
+        <button id="btnPrev">Previous Note</button>
+    </div>
+    <div class="editor">
+        <form action="post">
+            <label for="title">Title:</label><br>
+            <input type="text" id="note_title_input" placeholder="Enter title"><br><br>
+            <label for="text">Note:</label><br>
+            <textarea name="text" id="show_text"></textarea>
+        </form>
+    </div>
+    <div class="preview">
+        <h3>Stored Note</h3>
+        <h4 id="note_title_display"></h4>
+        <p id="note_display"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

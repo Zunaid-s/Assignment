@@ -1,0 +1,37 @@
+.all{
+    /* color: bisque; */
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    transition: background-color 0.5s ease, color 0.5s ease;
+    display:inline-block;
+    text-align: center;
+    align-items:center;
+    justify-content: center;
+}
+
+#toggle-btn{
+    display: solid;
+    align-items: right;
+    position: absolute;
+    right: 4px;
+    top: 5px;
+
+}
+#toggle-btn > button{
+    border-radius: 30px;
+    padding: 8px;
+    width: 130px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgb(51, 51, 51);
+    font-weight: bold;
+    font-size:medium;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+.center_show{
+    padding-top: 100px;
+}
+.boxes{
+    border-width: 5px;
+    border-color: white;
+}
