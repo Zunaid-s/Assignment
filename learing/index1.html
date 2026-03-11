@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Colour Changer</title>
+</head>
+<body>
+<button class="control">Red</button>
+<button class="control">Green</button>
+<button class="control">Blue</button>
+    <script>
+        let ctrls = document.querySelectorAll(".control");
+        ctrls.forEach(function (btn) {
+        btn.addEventListener("click", 
+        function (event) {
+                const color = event.target.innerText;
+                document.body.style.backgroundColor = color;
+            })
+        })
+    </script>
+</body>
+</html>

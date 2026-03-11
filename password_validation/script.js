@@ -1,3 +1,4 @@
+
 var password = document.getElementById('password');
 var meter = document.getElementById('password-strength-meter');
 var text = document.getElementById('password-strength-text');
@@ -11,23 +12,23 @@ let jsn = {
     phoneno:"",
     password:""
 }
-var strength = {
-        0: "Worst ☹",
-        1: "Bad ☹",
-        2: "Weak ☹",
-        3: "Good ☺",
-        4: "Strong ☻"
+let strength = {
+	0: "Worst ☹",
+	1: "Bad ☹",
+	2: "Weak ☹",
+	3: "Good ☺",
+	4: "Strong ☻"
 }
 
 
 nam.addEventListener('input', function(){
-    jsn.name = nam.value;  // Fixed: use .value instead of .innerText
+    jsn.name = nam.value;
 })
 email.addEventListener('input', function(){
-    jsn.email = email.value;  // Fixed: use .value instead of .innerText
+    jsn.email = email.value; 
 })
 phoneno.addEventListener('input',function(){
-    jsn.phoneno = phoneno.value;  // Fixed: use .value instead of .innerText
+    jsn.phoneno = phoneno.value;
 })
 
 
@@ -47,14 +48,11 @@ password.addEventListener('input', function()
     if (meter.value <= 2) {
         console.log("Enter a better password.")
     }else{
-        jsn.password = password.value;  // Fixed: use .value instead of .innerText
+        jsn.password = password.value;
     }
 });
-var submitBtn = document.getElementById('submit');
-
-// Add form submit event listener to save jsn to localStorage before page refresh
-var form = document.querySelector('form');
+let submitBtn = document.getElementById('submit');
+let form = document.querySelector('form');
 form.addEventListener('submit', function(event) {
     localStorage.setItem('userData', JSON.stringify(jsn));
-    // Allow the form to submit and refresh the page
 });

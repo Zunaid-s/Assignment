@@ -6,9 +6,9 @@
 
 body {
     padding: 2.5em 2em 0em;
-    background: #f5f7f9;
+    background: #2e2d2d;
 		font-size: 1.5em;
-		color: #346;
+		color: rgb(118, 154, 226);
 		font-family: Signika, -apple-system, sans-serif;
 }
 
@@ -24,8 +24,8 @@ input {
     padding: 0.5em 1em 0.5em 0.7em;
     width: 100%;
     border: none;
-    background: rgba(0,0,0,0.05);
-    color: rgba(0,0,0,0.8);
+    background: rgba(0, 0, 0, 0.377);
+    color: rgba(129, 129, 129, 0.8);
     font-size: 2em;
     line-height: 0;
 	transition: all .5s linear;
@@ -73,4 +73,12 @@ meter[value="4"]::-moz-meter-bar { background: green; }
 	padding: 0 .25em;
 	font-family: Courgette, cursive;
 	margin-top: 1em;
+}
+
+.buttons{
+	color: #9ab;
+	display: flex;
+	width: 50%;
+	height: 50%;
+
 }

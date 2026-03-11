@@ -1,0 +1,25 @@
+body{
+    background-color:cadetblue;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+}
+#center{
+    padding: 100px;
+    text-align: center;
+    display: block;
+    /* background-color:aquamarine; */
+    background-image: url("image.jpg");
+    background-size:cover;
+    background-position: 10%;
+    width : 15%;
+    border-radius: 20px;
+}
+#center *{
+    color:rgb(0, 0, 0);
+}
+#counter{
+    font-size: 50px;
+
+}
+button{
+    width : 20px
+}
