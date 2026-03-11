@@ -10,8 +10,6 @@ button{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-/* title styling removed since title input is gone */
-
 body {
     display: flex;
     flex-wrap: wrap;

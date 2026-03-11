@@ -1,4 +1,3 @@
-// beginner sticky notes with localStorage persistence
 let notes = JSON.parse(localStorage.getItem('notes') || '[]');
 // migrate simple strings to objects with title
 if (notes.length && typeof notes[0] === 'string') {
