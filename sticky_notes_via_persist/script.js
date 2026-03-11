@@ -1,5 +1,4 @@
 let notes = JSON.parse(localStorage.getItem('notes') || '[]');
-// migrate simple strings to objects with title
 if (notes.length && typeof notes[0] === 'string') {
     notes = notes.map(t => ({ title: '', body: t }));
 }
@@ -97,4 +96,4 @@ btnPrev.addEventListener('click', () => {
 });
 
 showNote();
-hidePreview();  // hide on initial load
+hidePreview();
